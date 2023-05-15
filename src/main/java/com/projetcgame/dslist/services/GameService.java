@@ -23,7 +23,7 @@ public class GameService {
     	Game result = gameRepository.findById(id).get();
     	GameDTO dto = new GameDTO(result);
 		return dto;
-    
+     
     }
 	
 	@Transactional(readOnly = true)
